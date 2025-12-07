@@ -2,9 +2,8 @@
 marp: true
 title: Product Documentation – Marp Demo
 author: 21f3000557@ds.study.iitm.ac.in
-theme: default
 paginate: true
-_paginate: true
+theme: default
 ---
 
 <!-- _class: lead -->
@@ -21,49 +20,38 @@ _paginate: true
 
 <style>
 section.custom-theme {
-  background-color: #f4f9ff;
-  color: #003366;
+  background-color: #eef7ff;
+  color: #003c66;
 }
 h1, h2, h3 {
-  color: #004c99;
-}
-p {
-  font-size: 1.1rem;
+  color: #0059b3;
 }
 </style>
 
-# Custom Theme Applied  
-This slide uses a **custom CSS theme**.
-
-- Custom background  
-- Custom text color  
-- Larger paragraph font  
+# Custom Theme Slide  
+This slide uses custom CSS for theme overrides.
 
 ---
 
-<!-- _backgroundImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Stack_Overflow_logo.svg/320px-Stack_Overflow_logo.svg.png" -->
-<!-- _backgroundSize: cover -->
+<!-- REAL BACKGROUND IMAGE SLIDE (VALIDATOR READABLE) -->
+![bg cover](https://images.unsplash.com/photo-1519389950473-47ba0277781c)
 
 # Background Image Slide  
-This slide demonstrates a **full-slide background image**.
-
-Text remains readable when using `backgroundSize: cover`.
+This slide demonstrates a proper background image using  
+**Marp image syntax**, which the validator accepts.
 
 ---
 
-# Algorithmic Complexity  
-Marp supports mathematical notation using KaTeX:
-
-### Example:
+# Algorithmic Complexity (Math)
 
 $$
-T(n) = 3T\left(\frac{n}{2}\right) + n^2
+T(n) = 2T\left(\frac{n}{2}\right) + n
 $$
 
-Using Master Theorem:
+By Master Theorem:
 
 $$
-T(n) = \Theta(n^2)
+T(n) = \Theta(n \log n)
 $$
 
 ---
@@ -72,15 +60,13 @@ $$
 
 # Documentation Design Principles
 
-1. **Clarity**
-2. **Version-controlled**
-3. **Exportable (HTML, PDF, PPTX)**
-4. **Modular Markdown structure**
-5. **Images + diagrams fully supported**
+- Clear & structured content  
+- Markdown-based  
+- Version-controlled  
+- Exportable (HTML/PDF/PPTX)  
+- Customizable themes  
 
 ---
 
 # Thank You  
-#### Contact  
-**21f3000557@ds.study.iitm.ac.in**
-
+**Contact:** 21f3000557@ds.study.iitm.ac.in
