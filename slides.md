@@ -1,63 +1,103 @@
 ---
 marp: true
-title: Product Documentation – Marp Demo
-author: 21f3000557@ds.study.iitm.ac.in
+title: Software Product Documentation
+author: Sharath
 paginate: true
 theme: default
 ---
 
-<!-- _class: lead -->
-
-# Product Documentation  
-### (Marp Presentation)
-
-**Contact:**  
-21f3000557@ds.study.iitm.ac.in
-
----
-
-# Custom Theme Example
-
+<!-- Custom Theme -->
 <style>
-section.custom-theme {
-  background-color: #eef7ff;
-  color: #003c66;
+section {
+  font-family: "Inter", sans-serif;
+  padding: 32px;
 }
-h1, h2, h3 {
-  color: #0059b3;
+h1, h2 {
+  color: #0a3d62;
+}
+strong {
+  color: #1e3799;
+}
+.code-box {
+  background: #f3f3f3;
+  padding: 12px;
+  border-radius: 8px;
 }
 </style>
 
-<!-- _class: custom-theme -->
+<!-- _class: lead -->
 
-## Styled Theme Slide  
-This slide uses custom CSS.
+# Software Product Documentation  
+### Technical Presentation (Marp)
+
+**Contact:** 21f3000557@ds.study.iitm.ac.in
 
 ---
 
-<!-- BACKGROUND IMAGE SLIDE (LOCAL IMAGE REQUIRED) -->
-![bg cover](background.jpg)
+# Introduction
 
-# Background Image Slide  
-This slide uses a **local image inside the repository**, which the validator accepts.
+This presentation outlines:
+
+- Product architecture  
+- System components  
+- Complexity analysis  
+- API examples  
+- Marp-based documentation workflow  
+
+---
+
+# Why Use Marp?
+
+- Git-friendly Markdown  
+- Supports custom themes  
+- Math (KaTeX), code, tables  
+- Exports: **PDF**, **HTML**, **PPTX**, **PNG**  
+- Easy to maintain across teams  
+
+---
+
+<!-- BACKGROUND IMAGE SLIDE -->
+![bg cover](images/background.jpg)
+
+# Architecture Overview
+
+This slide demonstrates a local background image:  
+`images/background.jpg`
 
 ---
 
 # Algorithmic Complexity
 
-Block math:
+### Example: Time Complexity
+
+Inline: `O(n \log n)`
+
+Block:
+
+$$
+T(n) = 5n^2 + 2n + 7
+$$
+
+### Recurrence Example
 
 $$
 T(n) = 2T\left(\frac{n}{2}\right) + n
 $$
 
-By Master Theorem:
+Master Theorem:
 
 $$
-T(n) = \Theta(n \log n)
+T(n) = O(n \log n)
 $$
 
 ---
 
-# Thank You  
-**Contact:** 21f3000557@ds.study.iitm.ac.in
+# API Example
+
+```python
+class AuthService:
+    def login(self, username, password):
+        user = db.find_user(username)
+        if user and user.verify(password):
+            return generate_token(user.id)
+        return None
