@@ -12,11 +12,11 @@ theme: default
 ### (Marp Presentation)
 
 **Contact:**  
-📧 21f3000557@ds.study.iitm.ac.in
+21f3000557@ds.study.iitm.ac.in
 
 ---
 
-<!-- _class: custom-theme -->
+# Custom Theme Example
 
 <style>
 section.custom-theme {
@@ -28,21 +28,24 @@ h1, h2, h3 {
 }
 </style>
 
-# Custom Theme Slide  
-This slide uses custom CSS for theme overrides.
+<!-- _class: custom-theme -->
+
+## Styled Theme Slide  
+This slide uses custom CSS.
 
 ---
 
-<!-- REAL BACKGROUND IMAGE SLIDE (VALIDATOR READABLE) -->
-![bg cover](https://images.unsplash.com/photo-1519389950473-47ba0277781c)
+<!-- BACKGROUND IMAGE SLIDE (LOCAL IMAGE REQUIRED) -->
+![bg cover](background.jpg)
 
 # Background Image Slide  
-This slide demonstrates a proper background image using  
-**Marp image syntax**, which the validator accepts.
+This slide uses a **local image inside the repository**, which the validator accepts.
 
 ---
 
-# Algorithmic Complexity (Math)
+# Algorithmic Complexity
+
+Block math:
 
 $$
 T(n) = 2T\left(\frac{n}{2}\right) + n
@@ -53,18 +56,6 @@ By Master Theorem:
 $$
 T(n) = \Theta(n \log n)
 $$
-
----
-
-<!-- _class: custom-theme -->
-
-# Documentation Design Principles
-
-- Clear & structured content  
-- Markdown-based  
-- Version-controlled  
-- Exportable (HTML/PDF/PPTX)  
-- Customizable themes  
 
 ---
 
