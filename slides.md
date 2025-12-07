@@ -57,7 +57,7 @@ This presentation outlines:
 ---
 
 <!-- BACKGROUND IMAGE SLIDE -->
-![bg cover](images/background.jpg)
+![bg cover](image/background.jpg)
 
 # Architecture Overview
 
